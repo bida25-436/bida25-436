@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 /* Navigation */
@@ -14,7 +14,7 @@ nav {
     text-align: center;
 }
 nav a {
-    color: skyblue ;
+    color: blue ;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -36,7 +36,7 @@ main {
 }
 /* Footer */
 footer {
-    background-color: plum;
+    background-color: #f9f9f9;
     color: skyblue;
     text-align: center;
     padding: 15px;
@@ -55,8 +55,8 @@ a {
     font-weight: bold;
 }
 body.dark-mode {
-    background-color: #333333;
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #333;
 }
 body.dark-mode nav {
     background-color: #222222;
@@ -74,7 +74,8 @@ body.dark-mode nav {
 }
 @keyframes blink {
     from, to { border-color: transparent; }
-    50% { border-color: blue; }
+    50% { border-color: #333; 
+    }
 }
 #back-to-top {
     display: none;
@@ -175,4 +176,83 @@ div }
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #eee;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #d63384 !important; /* crochet pink accent */
+}
+.nav-link {
+  color: #555 !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #d63384 !important;
+}
+/* Hero Section */
+.hero {
+  background: #ffe6f0;
+  border-bottom: 2px solid #f2f2f2;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  color: #d63384;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+/* FAQ Accordion */
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #d63384;
+  color: #fff;
+}
+.accordion-body {
+  background-color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* Sales Page Cards */
+.card {
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.card-title {
+  color: #d63384;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #555;
 }
