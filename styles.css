@@ -3,50 +3,64 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F9FA; /* light gray background */
-    color: #333333; /* dark gray text */
+    background-color: #F8F9FA; 
+    color: #333333; 
     transition: background-color 0.3s, color 0.3s;
 }
-
 /* Navigation */
 nav {
-    background-color: #001F3F; /* navy */
+    background-color: #001F3F; 
     padding: 15px;
     text-align: center;
 }
 nav a {
-    color: #F5F5DC; /* beige links */
+    color: #F5F5DC; 
     text-decoration: none;
     margin: 0 15px;
 }
 nav a:hover {
-    color: #4A90E2; /* soft blue hover */
+    color: #4A90E2; 
     text-decoration: underline;
 }
-
 /* Headers */
 header {
-    background-color: #001F3F; /* navy header */
-    color: #F5F5DC; /* beige text */
+    background-color: #001F3F; 
+    color: #F5F5DC; 
     padding: 30px;
     text-align: center;
 }
-
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 /* Footer */
 footer {
-    background-color: #001F3F; /* navy footer */
-    color: #F5F5DC; /* beige text */
+    background-color: #001F3F; 
+    color: #F5F5DC; 
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
-
+/* Images */
+img {
+    border-radius: 10px; 
+    border: 2px solid #F5F5DC; 
+    box-shadow: 0 4px 8px rgba(0, 31, 63, 0.25); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover effect */
+img:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.4); 
+}
 /* FAQ Accordion */
 .accordion-button {
-    background-color: #F5F5DC;   /* beige background */
+    background-color: #F5F5DC;   
     font-weight: bold;
-color: #001F3F;              /* navy text */
-    border: 2px solid #001F3F;   /* navy border */
+color: #001F3F;              
+    border: 2px solid #001F3F;   
 }
 .accordion-button:focus {
     box-shadow: none;
@@ -57,58 +71,52 @@ color: #001F3F;              /* navy text */
 }
 .accordion-body {
     background-color: #fff;
-    border: 1px solid #4A90E2;   /* soft blue border */
+    border: 1px solid #4A90E2;   
     padding: 15px;
 }
 /* Sales Page Cards */
 .card {
-  border: 1px solid #ccc; /* softer neutral border */
+  border: 1px solid #ccc; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px; /* rounded corners for a modern look */
-  overflow: hidden;   /* keeps image edges clean */
+  border-radius: 8px; 
+  overflow: hidden;   
 }
-
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* slightly stronger shadow */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
 }
-
 .card-title {
-  color: #001F3F; /* navy for headings */
+  color: #001F3F; 
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .card-text {
   font-size: 0.95rem;
-  color: #333333; /* dark gray for readability */
+  color: #333333; 
 }
-
 .card img {
   height: 250px;
-  width: 100%;          /* ensures full width alignment */
-  object-fit: cover;    /* keeps proportions neat */
+  width: 100%;         
+  object-fit: cover;    
   border-bottom: 1px solid #ccc;
 }
 /* Accent Links */
 a {
-    color: #001F3F; /* navy accent */
+    color: #001F3F; 
     text-decoration: none;
     font-weight: bold;
 }
 a:hover {
-    color: #4A90E2; /* soft blue hover */
+    color: #4A90E2; 
 }
-
 /* Dark Mode */
 body.dark-mode {
-    background-color: #333333; /* dark gray background */
-    color: #F5F5DC; /* beige text */
+    background-color: #333333; 
+    color: #F5F5DC; 
 }
 body.dark-mode nav {
-    background-color: #001F3F; /* navy navbar */
+    background-color: #001F3F; 
 }
-
 /* Theme Toggle Button */
 #theme-toggle {
     padding: 8px 16px;
@@ -119,7 +127,6 @@ body.dark-mode nav {
     color: #001F3F;
     border-radius: 4px;
 }
-
 /* Typing Headline */
 #typing-headline {
     min-height: 80px;
@@ -131,15 +138,14 @@ body.dark-mode nav {
     from, to { border-color: transparent; }
     50% { border-color: #333333; }
 }
-
 /* Back to Top Button */
 #back-to-top {
     display: none;
     position: fixed;
-bottom: 20px;
+    bottom: 20px;
     right: 20px;
-    background-color: #001F3F; /* navy */
-    color: #F5F5DC; /* beige */
+    background-color: #001F3F; 
+    color: #F5F5DC; 
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -151,24 +157,22 @@ bottom: 20px;
     z-index: 9999;
 }
 #back-to-top:hover {
-    background-color: #4A90E2; /* soft blue hover */
+    background-color: #4A90E2; 
 }
-
 /* Filter Buttons */
 .filter-btn {
     padding: 8px 16px;
     margin: 5px;
-    border: 1px solid #001F3F; /* navy border */
-    background: #F5F5DC; /* beige background */
-    color: #001F3F; /* navy text */
+    border: 1px solid #001F3F; 
+    background: #F5F5DC; 
+    color: #001F3F; 
     cursor: pointer;
 border-radius: 4px;
 }
 .filter-btn.active {
-    background: #001F3F; /* navy active */
-    color: #F5F5DC; /* beige text */
+    background: #001F3F; 
+    color: #F5F5DC; 
 }
-
 /* Project Cards */
 .project-card {
     transition: all 0.3s;
@@ -180,20 +184,18 @@ border-radius: 4px;
 .project-card.hidden {
     display: none;
 }
-
 /* Fun Fact Container */
 .fun-fact-container {
     margin: 30px 0;
     padding: 20px;
-    background-color: #F5F5DC; /* beige background */
+    background-color: #F5F5DC; 
     border-radius: 10px;
     text-align: center;
 }
-
 /* Reveal Fact Button */
 #reveal-fact {
-    background-color: #001F3F; /* navy */
-    color: #F5F5DC; /* beige */
+    background-color: #001F3F; 
+    color: #F5F5DC; 
     border: none;
     padding: 12px 24px;
     font-size: 16px;
@@ -202,9 +204,8 @@ border-radius: 4px;
     transition: background-color 0.3s;
 }
 #reveal-fact:hover {
-background-color: #4A90E2; /* soft blue hover */
+background-color: #4A90E2;   
 }
-
 /* Hidden Fact */
 .hidden-fact {
     display: none;
@@ -221,4 +222,100 @@ background-color: #4A90E2; /* soft blue hover */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+/* Section Styling */
+section {
+    background-color: #F5F5DC; 
+    color: #001F3F;            
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+/* Div Styling */
+div {
+    background-color: #F8F9FA; 
+    color: #333333;           
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F8F9FA; 
+  color: #333333;            
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #eee;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #001F3F 
+}
+.nav-link {
+  color: #333333 
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #4A90E2 
+}
+/* Hero Section */
+.hero {
+  background: #F5F5DC; 
+  border-bottom: 2px solid #f2f2f2;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  color: #001F3F; 
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #333333; 
+}
+/* FAQ Accordion Styling */
+.accordion-button {
+  background-color: #F5F5DC;   
+  font-weight: bold;           
+  color: #001F3F;              
+  border: 2px solid #001F3F;   
+}
+.accordion-button:focus {
+  box-shadow: none;            
+}
+.accordion-item {
+  margin-bottom: 10px;         
+  border: none;                
+}
+.accordion-body {
+  background-color: #fff;      
+  border: 1px solid #4A90E2;  
+  padding: 15px;
+  color: #333333;             
+  /* General list reset */
+ul {
+  list-style-type: none;   
+  margin: 0;
+  padding: 0;
+}
+/* Skills list styling */
+ul li {
+  background-color: #F5F5DC;   
+  color: #001F3F;              
+  font-weight: 500;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-left: 4px solid #4A90E2; 
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+/* Hover effect */
+ul li:hover {
+  background-color: #F8F9FA;   
 }
