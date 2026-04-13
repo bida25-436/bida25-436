@@ -1,0 +1,277 @@
+HHHHHHHHHH/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Navigation */
+nav {
+    background-color: plum;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: blue ;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* Headers */
+header {
+    background-color: #f9f9f9;
+    color: rgba(255, 255, 255, 0.568)
+    padding: 30px;
+    text-align: center;
+}
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    color: skyblue;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* Images */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+}
+/* Accent Links */
+a {
+    color: #800080; /* accent */
+    text-decoration: none;
+    font-weight: bold;
+}
+body.dark-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+body.dark-mode nav {
+    background-color: #222222;
+}
+#theme-toggle {
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+#typing-headline {
+    min-height: 80px;
+    border-right: 3px solid palevioletred;
+    display: inline-block;
+    animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; 
+    }
+}
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: purple ;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+transition: background-color 0.3s;
+z-index: 9999;
+}
+#back-to-top:hover { background-color: purple ; }
+.filter-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid blue
+    background: white;
+    color: #4CAF50;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.filter-btn.active {
+    background: blue;
+    color: white;
+}
+.project-card {
+    transition: all 0.3s;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.project-card.hidden {
+    display: none;
+}
+.fun-fact-container {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+}
+#reveal-fact {
+    background-color: plum;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#reveal-fact:hover {
+    background-color: plum;
+}
+.hidden-fact {
+    display: none;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+}
+.hidden-fact.show {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+}
+/* Section */
+sec }
+    background-color: #;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Div class */
+div }
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #eee;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #d63384 !important; /* crochet pink accent */
+}
+.nav-link {
+  color: #555 !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #d63384 !important;
+}
+/* Hero Section */
+.hero {
+  background: #ffe6f0;
+  border-bottom: 2px solid #f2f2f2;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  color: #d63384;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+/* FAQ Accordion */
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #d63384;
+  color: #fff;
+}
+.accordion-body {
+  background-color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* Sales Page Cards */
+.card {
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.card-title {
+  color: #d63384;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #555;
+}
+/* FAQ Accordion Styling */
+.accordion-button {
+  background-color: #fce4ec;   /* soft pink background */
+  font-weight: bold;           /* bold text */
+  color: #d63384;              /* crochet brand color */
+  border: 2px solid #d63384;   /* border around each button */
+}
+.accordion-button:focus {
+  box-shadow: none;            /* remove default blue outline */
+}
+.accordion-item {
+  margin-bottom: 10px;         /* spacing between questions */
+  border: none;                /* clean look */
+}
+.accordion-body {
+  background-color: #fff;      /* keep answers readable */
+  border: 1px solid #f8bbd0;   /* subtle border for answers */
+  padding: 15px;
+}

@@ -121,5 +121,21 @@
             </footer>
             <button id="back-to-top">↑</button>
             <script src="script.js"></script>
+            <!-- Back to Top Button -->
+<button id="back-to-top">↑</button>
+<!-- JavaScript -->
+<script>
+  const backToTopBtn = document.getElementById("back-to-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) { // show after scrolling 200px
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
         </body>
 </html>

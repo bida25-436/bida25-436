@@ -26,7 +26,8 @@
 <p>Crocheting has always been more than just a hobby to me, it is a way to express my creativity. I began learning how to crochet just from watching YouTube videos during the period of waiting for my grade 10 results in 2022 and overtime it grew into a skill when it all started as a joke because I was anxious my results and couldn't stay idle so I had to keep myself busy. After I saw how much potential I have, I started a business in 2024 and it has been the best thing I ever did for myself. Through this portfolio, I aim to showcase my journey and connect with people who appreciate the art of handmade crafts.</p>
 <div class="fun-fact-container">
     <button id="reveal-fact">🔍Click to Reveal a Fun Fact About Me!</button>
-    <p id="fun-fact" class="hidden-fact">🧶I can crochet for 3 hours straight without stopping unless it has to be a bathroom break!</p>
+    <div id="fun-fact" class="hidden-fact">
+        🧶I once finished a bag in a day
 </div>
 <h3>My Skills</h3>
 <ul>
@@ -43,5 +44,11 @@
                 <p>&copy; 2026 TCC</p>
             </footer>
             <script src="script.js"></script>
+            <script>
+  document.getElementById("reveal-fact").addEventListener("click", function() {
+    const fact = document.getElementById("fun-fact");
+    fact.classList.toggle("show");
+  });
+</script>
         </body>
 </html>

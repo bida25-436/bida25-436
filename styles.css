@@ -3,87 +3,143 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #F8F9FA; /* light gray background */
+    color: #333333; /* dark gray text */
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* Navigation */
 nav {
-    background-color: plum;
+    background-color: #001F3F; /* navy */
     padding: 15px;
     text-align: center;
 }
 nav a {
-    color: blue ;
+    color: #F5F5DC; /* beige links */
     text-decoration: none;
     margin: 0 15px;
 }
 nav a:hover {
+    color: #4A90E2; /* soft blue hover */
     text-decoration: underline;
 }
+
 /* Headers */
 header {
-    background-color: #f9f9f9;
-    color: rgba(255, 255, 255, 0.568)
+    background-color: #001F3F; /* navy header */
+    color: #F5F5DC; /* beige text */
     padding: 30px;
     text-align: center;
 }
-/* Main Content */
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
+
 /* Footer */
 footer {
-    background-color: #f9f9f9;
-    color: skyblue;
+    background-color: #001F3F; /* navy footer */
+    color: #F5F5DC; /* beige text */
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
-/* Images */
-img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+/* FAQ Accordion */
+.accordion-button {
+    background-color: #F5F5DC;   /* beige background */
+    font-weight: bold;
+color: #001F3F;              /* navy text */
+    border: 2px solid #001F3F;   /* navy border */
 }
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-item {
+    margin-bottom: 10px;
+    border: none;
+}
+.accordion-body {
+    background-color: #fff;
+    border: 1px solid #4A90E2;   /* soft blue border */
+    padding: 15px;
+}
+/* Sales Page Cards */
+.card {
+  border: 1px solid #ccc; /* softer neutral border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* rounded corners for a modern look */
+  overflow: hidden;   /* keeps image edges clean */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* slightly stronger shadow */
+}
+
+.card-title {
+  color: #001F3F; /* navy for headings */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333333; /* dark gray for readability */
+}
+
+.card img {
+  height: 250px;
+  width: 100%;          /* ensures full width alignment */
+  object-fit: cover;    /* keeps proportions neat */
+  border-bottom: 1px solid #ccc;
 }
 /* Accent Links */
 a {
-    color: #800080; /* accent */
+    color: #001F3F; /* navy accent */
     text-decoration: none;
     font-weight: bold;
 }
+a:hover {
+    color: #4A90E2; /* soft blue hover */
+}
+
+/* Dark Mode */
 body.dark-mode {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #333333; /* dark gray background */
+    color: #F5F5DC; /* beige text */
 }
 body.dark-mode nav {
-    background-color: #222222;
+    background-color: #001F3F; /* navy navbar */
 }
+
+/* Theme Toggle Button */
 #theme-toggle {
     padding: 8px 16px;
     cursor: pointer;
     margin: 10px;
+    background-color: #F5F5DC;
+    border: 1px solid #001F3F;
+    color: #001F3F;
+    border-radius: 4px;
 }
+
+/* Typing Headline */
 #typing-headline {
     min-height: 80px;
-    border-right: 3px solid palevioletred;
+    border-right: 3px solid #4A90E2;
     display: inline-block;
     animation: blink 0.75s step-end infinite;
 }
 @keyframes blink {
     from, to { border-color: transparent; }
-    50% { border-color: #333; 
-    }
+    50% { border-color: #333333; }
 }
+
+/* Back to Top Button */
 #back-to-top {
     display: none;
     position: fixed;
-    bottom: 20px;
+bottom: 20px;
     right: 20px;
-    background-color: purple ;
-    color: white;
+    background-color: #001F3F; /* navy */
+    color: #F5F5DC; /* beige */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -91,43 +147,53 @@ body.dark-mode nav {
     font-size: 24px;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-transition: background-color 0.3s;
-z-index: 9999;
+    transition: background-color 0.3s;
+    z-index: 9999;
 }
-#back-to-top:hover { background-color: purple ; }
+#back-to-top:hover {
+    background-color: #4A90E2; /* soft blue hover */
+}
+
+/* Filter Buttons */
 .filter-btn {
     padding: 8px 16px;
     margin: 5px;
-    border: 1px solid blue
-    background: white;
-    color: #4CAF50;
+    border: 1px solid #001F3F; /* navy border */
+    background: #F5F5DC; /* beige background */
+    color: #001F3F; /* navy text */
     cursor: pointer;
-    border-radius: 4px;
+border-radius: 4px;
 }
 .filter-btn.active {
-    background: blue;
-    color: white;
+    background: #001F3F; /* navy active */
+    color: #F5F5DC; /* beige text */
 }
+
+/* Project Cards */
 .project-card {
     transition: all 0.3s;
     margin: 15px 0;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 8px;
 }
 .project-card.hidden {
     display: none;
 }
+
+/* Fun Fact Container */
 .fun-fact-container {
     margin: 30px 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #F5F5DC; /* beige background */
     border-radius: 10px;
     text-align: center;
 }
+
+/* Reveal Fact Button */
 #reveal-fact {
-    background-color: plum;
-    color: white;
+    background-color: #001F3F; /* navy */
+    color: #F5F5DC; /* beige */
     border: none;
     padding: 12px 24px;
     font-size: 16px;
@@ -136,14 +202,16 @@ z-index: 9999;
     transition: background-color 0.3s;
 }
 #reveal-fact:hover {
-    background-color: plum;
+background-color: #4A90E2; /* soft blue hover */
 }
+
+/* Hidden Fact */
 .hidden-fact {
     display: none;
     font-size: 18px;
     margin-top: 20px;
     padding: 15px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     animation: fadeIn 0.5s;
 }
@@ -153,120 +221,4 @@ z-index: 9999;
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
-}
-}
-/* Section */
-sec }
-    background-color: #;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-/* Div class */
-div }
-    background-color: pink;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-/* General Page Styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-/* Navbar */
-.navbar {
-  border-bottom: 2px solid #eee;
-}
-.navbar-brand {
-  font-weight: bold;
-  color: #d63384 !important; /* crochet pink accent */
-}
-.nav-link {
-  color: #555 !important;
-  transition: color 0.3s ease;
-}
-.nav-link:hover {
-  color: #d63384 !important;
-}
-/* Hero Section */
-.hero {
-  background: #ffe6f0;
-  border-bottom: 2px solid #f2f2f2;
-}
-.hero h1 {
-  font-size: 2.2rem;
-  color: #d63384;
-}
-.hero p {
-  font-size: 1.1rem;
-  color: #555;
-}
-/* FAQ Accordion */
-.accordion-button {
-  background-color: #f8f9fa;
-  font-weight: 600;
-  color: #333;
-}
-.accordion-button:not(.collapsed) {
-  background-color: #d63384;
-  color: #fff;
-}
-.accordion-body {
-  background-color: #fff;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-/* Sales Page Cards */
-.card {
-  border: 1px solid #eee;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-.card-title {
-  color: #d63384;
-  font-weight: bold;
-}
-.card-text {
-  font-size: 0.95rem;
-  color: #555;
-}
-.card img {
-  height: 250px;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
-}
-/* Footer */
-footer {
-  background-color: #f8f9fa;
-  font-size: 0.9rem;
-  color: #555;
-}
-/* FAQ Accordion Styling */
-.accordion-button {
-  font-weight: 600;
-  color: #333;
-}
-.accordion-button:not(.collapsed) {
-  background-color: #f8d7da; /* soft pink highlight */
-  color: #d63384; /* crochet brand color */
-}
-.accordion-item:last-child .accordion-button {
-  background-color: #ffe5f0; /* lighter highlight for last question */
-  font-weight: bold;
-  border: 2px solid #d63384;
 }
