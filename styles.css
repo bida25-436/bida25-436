@@ -298,14 +298,12 @@ body {
   border: 1px solid #4A90E2;  
   padding: 15px;
   color: #333333;             
-  /* General list reset */
-ul {
+ .skills-list {
   list-style-type: none;   
   margin: 0;
   padding: 0;
 }
-/* Skills list styling */
-ul li {
+ .skills-list li{
   background-color: #F5F5DC;   
   color: #001F3F;              
   font-weight: 500;
@@ -318,4 +316,20 @@ ul li {
 /* Hover effect */
 ul li:hover {
   background-color: #F8F9FA;   
+}
+.logo-headline {
+  text-align: center; 
+  margin: 20px 0;  
+  border: none;
+  background: transparent;
+}
+.logo-headline img {
+  display: block;       
+  margin: 0 auto;
+}
+#typing-headline {     
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #001F3F;  
+  font-weight: bold;     
 }
