@@ -22,6 +22,18 @@ nav a:hover {
     color: #4A90E2; 
     text-decoration: underline;
 }
+.navbar {
+  background-color: #001F3F;   
+  border-bottom: 2px solid #eee;
+  padding: 10px;
+}
+.navbar a {
+  color: #F5F5DC;              
+  text-decoration: none;
+  margin: 0 10px;
+}
+.navbar a:hover {
+  color: #4A90E2;              
 /* Headers */
 header {
     background-color: #001F3F; 
@@ -127,12 +139,21 @@ body.dark-mode nav {
     color: #001F3F;
     border-radius: 4px;
 }
-/* Typing Headline */
+.logo-headline {
+  text-align: center;       
+  margin: 20px 0;
+  background: none;         
+  border: none;             
+}
+.logo-headline img {
+  display: block;           
+  margin: 0 auto;
+}
 #typing-headline {
-    min-height: 80px;
-    border-right: 3px solid #4A90E2;
-    display: inline-block;
-    animation: blink 0.75s step-end infinite;
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #001F3F;           
+  font-weight: bold;
 }
 @keyframes blink {
     from, to { border-color: transparent; }
@@ -167,7 +188,7 @@ body.dark-mode nav {
     background: #F5F5DC; 
     color: #001F3F; 
     cursor: pointer;
-border-radius: 4px;
+    border-radius: 4px;
 }
 .filter-btn.active {
     background: #001F3F; 
@@ -253,7 +274,9 @@ body {
 }
 /* Navbar */
 .navbar {
+     background-color: #001F3F;
   border-bottom: 2px solid #eee;
+  padding: 10px;
 }
 .navbar-brand {
   font-weight: bold;
@@ -332,4 +355,18 @@ ul li:hover {
   font-size: 2rem;
   color: #001F3F;  
   font-weight: bold;     
+}
+.card-title {
+  font-weight: bold;     
+  color: #001F3F;        
+  text-align: center;    
+  margin-bottom: 10px;
+}
+.card-text {
+  background-color: #F5F5DC; 
+  color: #333333;            
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.4;
 }

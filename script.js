@@ -12,7 +12,6 @@ toggleButton.addEventListener('click', function() {
 const texts = [
     "Hi, I'm Tumelo!",
     "I'm a Crochet Artist",
-    "I Crochet Cool Items",
     "Welcome to My Portfolio!"
 ];
 let textIndex = 0;
