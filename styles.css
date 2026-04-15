@@ -21,19 +21,7 @@ nav a {
 nav a:hover {
     color: #4A90E2; 
     text-decoration: underline;
-}
-.navbar {
-  background-color: #001F3F;   
-  border-bottom: 2px solid #eee;
-  padding: 10px;
-}
-.navbar a {
-  color: #F5F5DC;              
-  text-decoration: none;
-  margin: 0 10px;
-}
-.navbar a:hover {
-  color: #4A90E2;              
+}          
 /* Headers */
 header {
     background-color: #001F3F; 
@@ -139,21 +127,11 @@ body.dark-mode nav {
     color: #001F3F;
     border-radius: 4px;
 }
-.logo-headline {
-  text-align: center;       
-  margin: 20px 0;
-  background: none;         
-  border: none;             
-}
-.logo-headline img {
-  display: block;           
-  margin: 0 auto;
-}
 #typing-headline {
-  margin-top: 10px;
-  font-size: 2rem;
-  color: #001F3F;           
-  font-weight: bold;
+  min-height: 80px;
+  border-right: 3px solid #4A90E2;
+  display: inline-block;
+  animation: blink 0.75s step-end infinite;
 }
 @keyframes blink {
     from, to { border-color: transparent; }
