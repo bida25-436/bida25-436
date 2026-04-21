@@ -346,31 +346,27 @@ ul li:hover {
   line-height: 1.4;
 }
 body {
-  background-image: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg");
-  background-size: cover;       /* makes it fill the screen */
-  background-position: center;  /* centers the image */
-  background-attachment: fixed; /* keeps it still when scrolling */
-}
-.hero {
-  background-image: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg");
+  background: url("images/download\ \(5\).jpg") no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  padding: 60px;
-  color: #fff; /* light text for contrast */
 }
-.hero {
-  background: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg") center/cover no-repeat;
+.about {
+  background: url("images/download\ \(5\).jpg") center/cover no-repeat;
+  padding: 60px;
+  color: #fff; 
+}
+.about {
   position: relative;
+  background: url("images/download\ \(5\).jpg") center/cover no-repeat;
 }
 
-.hero::before {
+.about::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0,0,0,0.5); /* dark overlay */
 }
 
-.hero h1, .hero p {
+.about h1, .about p {
   position: relative; /* keeps text above overlay */
-  color: #F5F5DC;     /* beige text */
+  color: #F5F5DC;     /* beige text for branding */
 }
