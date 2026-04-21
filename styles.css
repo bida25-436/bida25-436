@@ -345,3 +345,32 @@ ul li:hover {
   font-size: 1rem;
   line-height: 1.4;
 }
+body {
+  background-image: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg");
+  background-size: cover;       /* makes it fill the screen */
+  background-position: center;  /* centers the image */
+  background-attachment: fixed; /* keeps it still when scrolling */
+}
+.hero {
+  background-image: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  color: #fff; /* light text for contrast */
+}
+.hero {
+  background: url("images/top\ view\ of\ scattered\ colored\ yarn\ b.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5); /* dark overlay */
+}
+
+.hero h1, .hero p {
+  position: relative; /* keeps text above overlay */
+  color: #F5F5DC;     /* beige text */
+}
