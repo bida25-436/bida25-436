@@ -83,16 +83,12 @@ revealButton.addEventListener('click', function() {
         revealButton.textContent = '🔍 Click to Reveal a Fun Fact About Me!';
     }
 });
-// ----- Challenge 5: Click to Reveal Fun Fact -----
 (function () {
   const revealButton = document.getElementById('reveal-fact');
   const funFact = document.getElementById('fun-fact');
-  // If we're not on about.html, these may be null — safely exit
   if (!revealButton || !funFact) return;
   revealButton.addEventListener('click', function () {
-    // Toggle the fact visibility
     funFact.classList.toggle('show');
-    // Toggle button text
     if (funFact.classList.contains('show')) {
       revealButton.textContent = 'Hide Fun Fact';
     } else {
