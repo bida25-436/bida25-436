@@ -1,13 +1,11 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F9FA; 
+    background-color: #F8F9FA;
     color: #333333; 
     transition: background-color 0.3s, color 0.3s;
 }
-/* Navigation */
 nav {
     background-color: #001F3F; 
     padding: 15px;
@@ -22,20 +20,17 @@ nav a:hover {
     color: #4A90E2; 
     text-decoration: underline;
 }          
-/* Headers */
 header {
     background-color: #001F3F; 
-    color: #F5F5DC; 
+    color: #F5F5DC;
     padding: 30px;
     text-align: center;
 }
-/* Main Content */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
-/* Footer */
 footer {
     background-color: #001F3F; 
     color: #F5F5DC; 
@@ -43,19 +38,16 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
-/* Images */
 img {
     border-radius: 10px; 
     border: 2px solid #F5F5DC; 
     box-shadow: 0 4px 8px rgba(0, 31, 63, 0.25); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* Hover effect */
 img:hover {
     transform: scale(1.03); 
     box-shadow: 0 6px 12px rgba(74, 144, 226, 0.4); 
 }
-/* FAQ Accordion */
 .accordion-button {
     background-color: #F5F5DC;   
     font-weight: bold;
@@ -74,7 +66,6 @@ color: #001F3F;
     border: 1px solid #4A90E2;   
     padding: 15px;
 }
-/* Sales Page Cards */
 .card {
   border: 1px solid #ccc; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,7 +91,6 @@ color: #001F3F;
   object-fit: cover;    
   border-bottom: 1px solid #ccc;
 }
-/* Accent Links */
 a {
     color: #001F3F; 
     text-decoration: none;
@@ -109,7 +99,6 @@ a {
 a:hover {
     color: #4A90E2; 
 }
-/* Dark Mode */
 body.dark-mode {
 background-color: #F5F5DC ;
 color: #333333;
@@ -117,7 +106,6 @@ color: #333333;
 body.dark-mode nav {
   background-color: #001F3F;
 }
-/* Theme Toggle Button */
 #theme-toggle {
   padding: 8px 16px;
   cursor: pointer;
@@ -134,7 +122,6 @@ body.dark-mode nav {
     from, to { border-color: transparent; }
     50% { border-color: #333333; }
 }
-/* Back to Top Button */
 #back-to-top {
     display: none;
     position: fixed;
@@ -155,7 +142,6 @@ body.dark-mode nav {
 #back-to-top:hover {
     background-color: #4A90E2; 
 }
-/* Filter Buttons */
 .filter-btn {
     padding: 8px 16px;
     margin: 5px;
@@ -169,18 +155,6 @@ body.dark-mode nav {
     background: #001F3F; 
     color: #F5F5DC; 
 }
-/* Project Cards */
-.project-card {
-    transition: all 0.3s;
-    margin: 15px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-.project-card.hidden {
-    display: none;
-}
-/* Fun Fact Container */
 .fun-fact-container {
     margin: 30px 0;
     padding: 20px;
@@ -188,7 +162,6 @@ body.dark-mode nav {
     border-radius: 10px;
     text-align: center;
 }
-/* Reveal Fact Button */
 #reveal-fact {
     background-color: #001F3F; 
     color: #F5F5DC; 
@@ -202,7 +175,6 @@ body.dark-mode nav {
 #reveal-fact:hover {
 background-color: #4A90E2;   
 }
-/* Hidden Fact */
 .hidden-fact {
     display: none;
     font-size: 18px;
@@ -219,9 +191,8 @@ background-color: #4A90E2;
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-/* Section Styling */
 section {
-    background-color: #F5F5DC; 
+  background-color: #F5F5DC;
     color: #001F3F;            
     border: none;
     padding: 20px;
@@ -229,7 +200,6 @@ section {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-/* Div Styling */
 div {
     background-color: #F8F9FA; 
     color: #333333;           
@@ -239,7 +209,6 @@ div {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-/* General Page Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F8F9FA; 
@@ -247,7 +216,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Navbar */
 .navbar {
      background-color: #001F3F;
   border-bottom: 2px solid #eee;
@@ -264,7 +232,6 @@ body {
 .nav-link:hover {
   color: #4A90E2 
 }
-/* Hero Section */
 .hero {
   background: #F5F5DC; 
   border-bottom: 2px solid #f2f2f2;
@@ -277,7 +244,6 @@ body {
   font-size: 1.1rem;
   color: #333333; 
 }
-/* FAQ Accordion Styling */
 .accordion-button {
   background-color: #F5F5DC;   
   font-weight: bold;           
@@ -311,7 +277,6 @@ body {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-/* Hover effect */
 ul li:hover {
   background-color: #F8F9FA;   
 }
@@ -344,29 +309,4 @@ ul li:hover {
   border-radius: 6px;
   font-size: 1rem;
   line-height: 1.4;
-}
-body {
-  background: url("images/download\ \(5\).jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-.about {
-  background: url("images/download\ \(5\).jpg") center/cover no-repeat;
-  padding: 60px;
-  color: #fff; 
-}
-.about {
-  position: relative;
-  background: url("images/download\ \(5\).jpg") center/cover no-repeat;
-}
-
-.about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0,0,0,0.5); /* dark overlay */
-}
-
-.about h1, .about p {
-  position: relative; /* keeps text above overlay */
-  color: #F5F5DC;     /* beige text for branding */
 }
